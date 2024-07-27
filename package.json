@@ -3,27 +3,38 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "npm run docker:dev && next dev",
+    "docker:dev": "cd docker/development && docker compose up -d",
+    "docker:stop": "cd docker/development && docker compose stop",
     "build": "next build",
     "start": "next start",
     "prettier": "prettier -w .",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate:dev": "dotenv -e .env.development -- npx prisma migrate dev",
+    "seed": "prisma db seed"
+  },
+  "prisma": {
+    "seed": "ts-node --compiler-options {\"module\":\"CommonJS\"} prisma/seed.ts"
   },
   "dependencies": {
+    "@prisma/client": "^5.17.0",
     "clsx": "^2.1.1",
     "next": "14.2.5",
     "react": "^18",
     "react-dom": "^18"
   },
   "devDependencies": {
-    "@types/node": "^20",
+    "@types/node": "^20.14.12",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "dotenv-cli": "^7.4.2",
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
     "prettier": "^3.3.3",
+    "prisma": "^5.17.0",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
     "typescript": "^5"
   }
 }
