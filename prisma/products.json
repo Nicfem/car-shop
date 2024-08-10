@@ -1,0 +1,162 @@
+[
+  {
+    "name": "Товар 1",
+    "description": "Описание товара 1",
+    "price": 100.0,
+    "stock": 50,
+    "category": "Категория 1",
+    "rating": 4.5
+  },
+  {
+    "name": "Товар 2",
+    "description": "Описание товара 2",
+    "price": 200.0,
+    "stock": 30,
+    "category": "Категория 2",
+    "rating": 3.5
+  },
+  {
+    "name": "Товар 3",
+    "description": "Описание товара 3",
+    "price": 300.0,
+    "stock": 20,
+    "category": "Категория 3",
+    "rating": 4.0
+  },
+  {
+    "name": "Товар 4",
+    "description": "Описание товара 4",
+    "price": 400.0,
+    "stock": 40,
+    "category": "Категория 4",
+    "rating": 3.7
+  },
+  {
+    "name": "Товар 5",
+    "description": "Описание товара 5",
+    "price": 500.0,
+    "stock": 45,
+    "category": "Категория 5",
+    "rating": 4.2
+  },
+  {
+    "name": "Товар 6",
+    "description": "Описание товара 6",
+    "price": 600.0,
+    "stock": 35,
+    "category": "Категория 6",
+    "rating": 3.9
+  },
+  {
+    "name": "Товар 7",
+    "description": "Описание товара 7",
+    "price": 700.0,
+    "stock": 25,
+    "category": "Категория 7",
+    "rating": 4.1
+  },
+  {
+    "name": "Товар 8",
+    "description": "Описание товара 8",
+    "price": 800.0,
+    "stock": 15,
+    "category": "Категория 8",
+    "rating": 3.8
+  },
+  {
+    "name": "Товар 9",
+    "description": "Описание товара 9",
+    "price": 900.0,
+    "stock": 10,
+    "category": "Категория 9",
+    "rating": 4.3
+  },
+  {
+    "name": "Товар 10",
+    "description": "Описание товара 10",
+    "price": 1000.0,
+    "stock": 5,
+    "category": "Категория 10",
+    "rating": 3.6
+  },
+  {
+    "name": "Товар 11",
+    "description": "Описание товара 11",
+    "price": 1100.0,
+    "stock": 55,
+    "category": "Категория 11",
+    "rating": 4.4
+  },
+  {
+    "name": "Товар 12",
+    "description": "Описание товара 12",
+    "price": 1200.0,
+    "stock": 60,
+    "category": "Категория 12",
+    "rating": 3.5
+  },
+  {
+    "name": "Товар 13",
+    "description": "Описание товара 13",
+    "price": 1300.0,
+    "stock": 65,
+    "category": "Категория 13",
+    "rating": 4.6
+  },
+  {
+    "name": "Товар 14",
+    "description": "Описание товара 14",
+    "price": 1400.0,
+    "category": "asdfasdf",
+    "stock": 70,
+    "rating": 3.7
+  },
+  {
+    "name": "Товар 15",
+    "description": "Описание товара 15",
+    "price": 1500.0,
+    "stock": 75,
+    "category": "Категория 15",
+    "rating": 4.8
+  },
+  {
+    "name": "Товар 16",
+    "description": "Описание товара 16",
+    "price": 1600.0,
+    "stock": 80,
+    "category": "Категория 16",
+    "rating": 3.9
+  },
+  {
+    "name": "Товар 17",
+    "description": "Описание товара 17",
+    "price": 1700.0,
+    "stock": 85,
+    "category": "Категория 17",
+    "rating": 4.0
+  },
+  {
+    "name": "Товар 18",
+    "description": "Описание товара 18",
+    "price": 1800.0,
+    "stock": 90,
+    "category": "Категория 18",
+    "rating": 3.7
+  },
+  {
+    "name": "Товар 19",
+    "description": "Описание товара 19",
+    "price": 1900.0,
+    "stock": 95,
+    "category": "Категория 19",
+    "rating": 4.2
+  },
+  {
+    "name": "Товар 20",
+    "description": "Описание товара 20",
+    "price": 2000.0,
+    "stock": 100,
+    "category": "Категория 20",
+    "rating": 3.5
+  }
+]

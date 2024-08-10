@@ -1,6 +1,6 @@
 -- CreateTable
 CREATE TABLE "products" (
-    "id" SERIAL NOT NULL,
+    "id" TEXT NOT NULL,
     "name" TEXT NOT NULL,
     "description" TEXT,
     "price" DOUBLE PRECISION NOT NULL,
@@ -8,8 +8,11 @@ CREATE TABLE "products" (
     "category" TEXT NOT NULL,
     "createdAt" TIMESTAMP(3) NOT NULL DEFAULT CURRENT_TIMESTAMP,
     "updatedAt" TIMESTAMP(3) NOT NULL,
-    "imageUrl" TEXT,
+    "image" TEXT NOT NULL,
     "rating" DOUBLE PRECISION,
 
     CONSTRAINT "products_pkey" PRIMARY KEY ("id")
 );
+
+-- CreateIndex
+CREATE UNIQUE INDEX "products_image_key" ON "products"("image");
