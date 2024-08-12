@@ -5,6 +5,7 @@ import { Dialog } from "./dialog";
 import { useController } from "react-hook-form";
 import clsx from "clsx";
 import { ErrorField } from "./errorField";
+import Image from "next/image";
 
 export const FilePicker = ({
   name,
@@ -159,7 +160,12 @@ export const FilePicker = ({
                 onClose={() => setDialogIsOpen(false)}
               >
                 {img.type.match(/image.*/i) && (
-                  <img src={URL.createObjectURL(img)} width="500px" />
+                  <Image
+                    src={URL.createObjectURL(img)}
+                    width={500}
+                    height={500}
+                    alt={img.name}
+                  />
                 )}
               </Dialog>
               <div className="flex">

@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles";
-import { HeaderWidget } from "@/widgets/header";
 import clsx from "clsx";
+import { HeaderWidget } from "@/widgets/header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,9 +18,9 @@ export const RootLayout = ({
 }>) => {
   return (
     <html lang="en">
-      <body className={clsx(inter.className, "bg-gray-100 dark:bg-gray-900")}>
+      <body className={clsx(inter.className, "bg-white")}>
         <HeaderWidget />
-        <main className="container mx-auto px-20">{children}</main>
+        <main className="container mx-auto px-20 mt-6">{children}</main>
       </body>
     </html>
   );
