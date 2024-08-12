@@ -1,0 +1,48 @@
+services:
+  nginx:
+    image: nginx:stable-alpine
+    ports:
+      - 80:80
+    volumes:
+      - "./nginx.conf:/etc/nginx/nginx.conf"
+    depends_on:
+      db:
+        condition: service_healthy
+      web:
+        condition: service_started
+    networks:
+      - main
+
+  db:
+    image: postgres:alpine
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+      - POSGRES_DB=postgres
+    volumes:
+      - db-date:/var/lib/postgresql/data
+    networks:
+      - main
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 10s
+
+  web:
+    networks:
+      - main
+    depends_on:
+      db:
+        condition: service_healthy
+    build:
+      context: ../../
+      dockerfile: docker/production/Dockerfile
+
+networks:
+  main:
+
+volumes:
+  db-date:

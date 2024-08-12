@@ -1,0 +1,9 @@
+.next/
+.dockerignore
+.gitignore
+.git
+
+node_modules/
+docker/
+READMI.md
+
