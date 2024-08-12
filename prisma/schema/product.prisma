@@ -1,14 +1,14 @@
 model Product {
   id          String   @id @default(uuid())
   name        String
-  description String?
+  description String
   price       Float
   stock       Int
   category    String
   createdAt   DateTime @default(now())
   updatedAt   DateTime @updatedAt
   image       String   @unique @default(uuid())
-  rating      Float?
+  rating      Float
 
   @@map("products")
 }

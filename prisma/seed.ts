@@ -13,7 +13,7 @@ async function main() {
   });
 
   for (const product of products) {
-    const url = "http://picsum.photos/200/200?grayscale";
+    const url = "http://picsum.photos/560/640?grayscale";
     const outputPath = `./public/${product.image}.jpg`;
 
     downloadImage(url, outputPath);
