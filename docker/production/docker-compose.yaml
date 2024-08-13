@@ -10,6 +10,11 @@ services:
         condition: service_healthy
       web:
         condition: service_started
+    deploy:
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: "16M"
     networks:
       - main
 
@@ -22,6 +27,11 @@ services:
       - POSGRES_DB=postgres
     volumes:
       - db-date:/var/lib/postgresql/data
+    deploy:
+      resources:
+        limits:
+          cpus: "0.2"
+          memory: "32M"
     networks:
       - main
     healthcheck:
@@ -40,6 +50,11 @@ services:
     build:
       context: ../../
       dockerfile: docker/production/Dockerfile
+    deploy:
+      resources:
+        limits:
+          cpus: "0.7"
+          memory: "600M"
 
 networks:
   main:
